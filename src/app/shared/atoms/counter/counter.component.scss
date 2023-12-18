@@ -1,0 +1,12 @@
+.counter-box {
+    width: 100%;
+    color: #fff;
+    height: 100%;
+    counter-reset: mycounter 8000;
+    .counter-box-count{
+        color: #F4F3F6;
+    }
+    .counter-box-title{
+        color: #909092;
+    }
+}

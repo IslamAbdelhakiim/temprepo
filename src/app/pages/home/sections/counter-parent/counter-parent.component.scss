@@ -1,0 +1,20 @@
+.counter{
+    width: 90%;
+    height: 15vh;
+    padding: 1.25rem 3.75rem;
+    background: var(--neutral-neutral-700, #191919);
+    border-radius: 0.5rem;
+    margin-top: 4rem;
+    margin-inline: auto;
+    gap: 6rem;
+    .counter-container{
+        app-counter{
+            display: block;
+            width: 76%;
+            height: 100%;
+        }
+    }
+    @media screen and (max-width: 1445px){
+        height: 20vh;
+    }
+}

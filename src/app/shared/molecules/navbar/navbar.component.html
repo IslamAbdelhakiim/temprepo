@@ -1,0 +1,38 @@
+<nav class="app-container w-100">
+  <!-- start logo -->
+  <a class="logo" routerLink="/home">
+    <img
+      src="../../../../../assets/images/Logo - EN.svg"
+      class="img-fluid"
+      alt="SAUDI ESPORTS logo"
+    />
+  </a>
+  <!-- end logo -->
+  <div class="hamburger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+  <ul class="nav-links w-100">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Course Catalog</a></li>
+    <li><a href="#">Talent Zone</a></li>
+    <li><a href="#">Community</a></li>
+    <li><a href="#">Media Center</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+  <ul class="nav-buttons nav-links">
+    <li (click)="changeLang()" class="language">
+      <a role="button">
+        <span class="icon icon-globe"></span>
+      </a>
+    </li>
+    <li class="notification">
+      <a role="button">
+        <span class="icon icon-bell-notification"></span>
+      </a>
+    </li>
+    <li><button class="btn main-btn">Sign In</button></li>
+  </ul>
+</nav>

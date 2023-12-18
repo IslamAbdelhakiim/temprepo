@@ -1,0 +1,13 @@
+/**
+* Media Breakpoints Sizes:
+* - Mobile from 320px --> 768px
+* - Tablet from 768px --> 1024px
+* - Desktop from 1024px --> 1366px and more
+*/
+$bp-mobile-min: 320px;
+$bp-mobile-400: 400px;
+$bp-mobile-max-tablet-min: 768px;
+$bp-tablet-min-bs: 576px;
+$bp-tablet-min: 640px;
+$bp-tablet-max: 1024px;
+$bp-bootstrap-gap: 992px;

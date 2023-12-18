@@ -1,0 +1,29 @@
+@import '../../../../../styles.scss';
+
+.comittee-section {
+    margin-top: 4rem;
+    background: var(--neutral-neutral-800, #121212);
+
+    .commitee {
+        width: 90%;
+        margin-inline: auto;
+
+        .commitee-title {
+            p {
+                color: var(--text-text-600-p, #F4F3F6);
+            }
+        }
+
+        .comitee-cards {
+            .commitee-card {
+                // width: 24%;
+                height: 36vh;
+
+                @media (max-width: 1600px) {
+                    height: 50vh;
+                }
+            }
+        }
+
+    }
+}

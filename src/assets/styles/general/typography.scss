@@ -1,0 +1,151 @@
+@import "../variables/colors.scss";
+
+/* ========================= Start LTR font family ================================== */
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../../fonts/sofia/SofiaProLight.woff2") format("woff2"),
+    url("../../fonts/sofia/SofiaProLight.woff") format("woff"),
+    url("../../fonts/sofia/SofiaProLight.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../../fonts/sofia/SofiaProRegular.woff2") format("woff2"),
+    url("../../fonts/sofia/SofiaProRegular.woff") format("woff"),
+    url("../../fonts/sofia/SofiaProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../../fonts/sofia/SofiaProMedium.woff2") format("woff2"),
+    url("../../fonts/sofia/SofiaProMedium.woff") format("woff"),
+    url("../../fonts/sofia/SofiaProMedium.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../../fonts/sofia/SofiaProSemiBold.woff2") format("woff2"),
+    url("../../fonts/sofia/SofiaProSemiBold.woff") format("woff"),
+    url("../../fonts/sofia/SofiaProSemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../../fonts/sofia/SofiaProBold.woff2") format("woff2"),
+    url("../../fonts/sofia/SofiaProBold.woff") format("woff"),
+    url("../../fonts/sofia/SofiaProBold.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+/* ========================= End LTR font family ================================== */
+
+/* ========================= Start RTL font family ================================== */
+
+@font-face {
+  font-family: "cairo";
+  src: url("../../fonts/cairo/Cairo-Light.woff2") format("woff2"),
+    url("../../fonts/cairo/Cairo-Light.woff") format("woff"),
+    url("../../fonts/cairo/Cairo-Light.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "cairo";
+  src: url("../../fonts/cairo/Cairo-Regular.woff2") format("woff2"),
+    url("../../fonts/cairo/Cairo-Regular.woff") format("woff"),
+    url("../../fonts/cairo/Cairo-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "cairo";
+  src: url("../../fonts/cairo/Cairo-Medium.woff2") format("woff2"),
+    url("../../fonts/cairo/Cairo-Medium.woff") format("woff"),
+    url("../../fonts/cairo/Cairo-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "cairo";
+  src: url("../../fonts/cairo/Cairo-SemiBold.woff2") format("woff2"),
+    url("../../fonts/cairo/Cairo-SemiBold.woff") format("woff"),
+    url("../../fonts/cairo/Cairo-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "cairo";
+  src: url("../../fonts/cairo/Cairo-Bold.woff2") format("woff2"),
+    url("../../fonts/cairo/Cairo-Bold.woff") format("woff"),
+    url("../../fonts/cairo/Cairo-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+/* ========================= End font family ================================== */
+
+
+/* font sizes */
+.text-xs {
+  font-size: 0.75rem; /* 12px*/
+}
+.text-sm {
+  font-size: 0.875rem; /* 14px*/
+}
+.text-md {
+  font-size: 1rem; /* 16px*/
+}
+.text-lg {
+  font-size: 1.125rem; /* 18px*/
+}
+.text-xl {
+  font-size: 1.25rem; /*20px */
+}
+.text-2xl {
+  font-size: 1.5rem; /*24px */
+}
+.text-3xl{
+  font-size: 2.5rem; /*40px */
+}
+/* font family*/
+
+.font-thin {
+  font-weight: 100;
+}
+.font-light {
+  font-weight: 300;
+}
+.font-regular {
+  font-weight: 400;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-semiBold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
+}

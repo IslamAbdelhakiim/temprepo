@@ -1,0 +1,28 @@
+<div class="comittee-section w-100">
+    <div class="commitee d-flex flex-column">
+        <div class="commitee-title mb-5">
+            <p class="text-3xl mb-0 text-center font-regular">
+                ACADEMIC COMMITTEE
+            </p>
+        </div>
+        <div class="comitee-cards row d-flex flex-wrap">
+            <ng-container *ngFor="let card of cards;let cardIndex = index">
+                <app-cards [imgSrc]="card.imgSrc" [imgAlt]="card.imgAlt" class="commitee-card mb-3 col-xl-3 col-md-4 col-sm-12 "
+                    [cardTitle]="cardTitlecardIndex" [subtitle]="cardSubTitlecardIndex"
+                    [content]="cardContentcardIndex">
+                    <ng-template #cardTitlecardIndex>
+                        {{card.Title}}
+                    </ng-template>
+                    <ng-template #cardSubTitlecardIndex>
+                        {{card.subTitle}}
+                    </ng-template>
+                    <ng-template #cardContentcardIndex>
+                        {{card.content}}
+                    </ng-template>
+                </app-cards>
+            </ng-container>
+        </div>
+
+    </div>
+
+</div>

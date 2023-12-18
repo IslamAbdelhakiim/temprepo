@@ -1,0 +1,16 @@
+body[dir="rtl"] nav{
+  .hamburger {
+    right: unset !important;
+    left: toRem(16);
+    //tablet
+    @include bp-min-width($bp-tablet-min) {
+      left: toRem(55);
+    }
+  }
+  @include bp-max-width($bp-tablet-max) {
+    .nav-links  {
+      clip-path: circle(50px at -10% -90%);
+      -webkit-clip-path: circle(50px at -10% -90%);
+    }
+  }
+}

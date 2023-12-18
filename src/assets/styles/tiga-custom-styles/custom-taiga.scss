@@ -1,0 +1,66 @@
+@import './taiga-variables.scss';
+
+button.t-button_active {
+    width: 48px !important;
+    background: #4F46E5 !important;
+}
+
+// Primary Button
+[tuiWrapper][data-appearance='primary'] {
+    background: $tui-primary !important;
+    color: $tui-primary-text !important;
+
+    .wrapper-hover {
+        background: $tui-primary !important;
+    }
+    .wrapper-active {
+        background: $tui-primary !important;
+    }
+}
+
+// Secondary button
+[tuiWrapper][data-appearance='secondary'] {
+    background: $tui-secondary !important;
+    color: var(--tui-white-txt) !important;
+
+    .wrapper-hover {
+        background: $tui-secondary !important;
+    }
+
+
+    .wrapper-active {
+        background: $tui-secondary !important;
+    }
+
+    .wrapper-invalid {
+        color: var(--tui-negative-night) !important;
+        background: var(--tui-error-bg) !important;
+
+        .wrapper-hover {
+            background: var(--tui-error-bg-hover) !important;
+        }
+
+        .wrapper-active {
+            background: var(--tui-error-bg-hover) !important;
+        }
+
+        .wrapper-focus {
+            --tui-focus: var(--tui-error-fill) !important;
+        }
+    }
+}
+//Start btn section
+[tuiWrapper][data-appearance='about'] {
+    background: pink;
+    display: flex;
+    width: 272px;
+    height: 56px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: var(--primary-primary-600-p, #8530AC);
+}
+
+// end btn section

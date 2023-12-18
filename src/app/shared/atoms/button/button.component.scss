@@ -1,0 +1,12 @@
+[tuiWrapper][data-appearance='primary'] {
+    background: pink;
+    display: flex;
+    width: 272px;
+    height: 56px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: var(--primary-primary-600-p, #8530AC);
+}

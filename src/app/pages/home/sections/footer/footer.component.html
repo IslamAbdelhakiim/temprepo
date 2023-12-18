@@ -1,0 +1,38 @@
+<footer>
+
+    <div class="gradient-one"></div>
+
+    <!-- Tob Row -->
+    <div class="top-row">
+        <!-- left-section -->
+        <div class="left-section">
+            <img src="assets/vectors/footer_logo.svg" alt="footer logo">
+            <p class="logo-slogan">Top learning experiences that create more talent in the world.
+            </p>
+        </div>
+
+        <!-- right section -->
+        <div class="right-section">
+            <div class="links-wrapper" *ngFor="let linkGroup of links">
+                <span>{{linkGroup.title}}</span>
+                <ul>
+                    <li *ngFor="let link of linkGroup.links">
+                        <a [routerLink]="link.url">{{link.title}}</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div> 
+
+    <!-- bottom Row -->
+    <div class="bottom-row">
+        <p>© 2023 Saudi E-sports Academy.</p>
+        <div class="social-icons-wrapper">
+            <a *ngFor="let link of socialMedia" [href]="link.url">
+                <img [src]="link.icon" [alt]="link.title + ' icon'">
+            </a>
+        </div>
+    </div>
+
+</footer>

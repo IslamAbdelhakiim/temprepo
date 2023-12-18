@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+// main styles
+@import "./assets/styles/main.scss";
+
+body[dir="ltr"] {
+  font-family: "Sofia Pro", sans-serif;
+}
+
+body[dir="rtl"] {
+  font-family: "cairo", sans-serif;
+}
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+}
+.app-container {
+  padding-inline: toRem(16);
+  //tablet
+  @include bp-min-width($bp-tablet-min) {
+    padding-inline: toRem(55)
+  }
+}

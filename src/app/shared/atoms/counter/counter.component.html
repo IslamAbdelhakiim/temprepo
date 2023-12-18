@@ -1,0 +1,12 @@
+<div class="counter-box d-flex flex-column justify-content-around align-items-center">
+    <div class="counter-box-count">
+        <p class="text-3xl">
+            {{viewCount}}<span class="text-3xl" *ngIf="kFlag">K</span><span class="text-3xl" *ngIf="plusFlag">+</span>
+        </p>
+    </div>
+    <div class="counter-box-title">
+       <p class="text-xl">
+        {{title}}
+       </p>
+    </div>
+</div>

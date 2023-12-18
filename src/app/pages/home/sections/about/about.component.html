@@ -1,0 +1,44 @@
+<section>
+    <!-- section title -->
+    <h1 class="section-header">About US</h1>
+
+    <!-- #region gradients & vector -->
+    <div class="gradient-one"></div>
+    <div class="gradient-two"></div>
+    <div class="vector">
+        <img [src]="vecorPath" alt="vector image">
+    </div>
+    <!-- $endregion -->
+
+    <!-- #region body wrapper -->
+    <div class="d-flex justify-content-between align-items-center">
+        <!-- left section -->
+        <div class="cards-wrapper">
+            <app-card [isWide]="true" [src]="topImage"></app-card>
+            <div class="horizental-cards-wrapper">
+                <app-card [src]="leftImage"></app-card>
+                <app-card [src]="rightImage"></app-card>
+            </div>
+        </div>
+
+        <!-- right section (call to action) -->
+        <div class="about-CTA-wrapper">
+            <div class="about-CTA">
+                <span class="subTitle">Powerful tools.</span>
+                <h2 class="title">More control.</h2>
+                <p class="paragraph">
+                    Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit
+                    gravida ac, rutrum
+                    molestie adipiscing lacinia, Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc.
+                    Ultrices nibh
+                    sapien elit gravida ac, rutrum molestie adipiscing lacinia.Scelerisque auctor dolor diam tortor,
+                    fames faucibus non
+                    interdum nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.
+                </p>
+                <!-- <button class="CTA">Learn More</button> -->
+                <app-button customclass="about">Learn More</app-button>
+            </div>
+        </div>
+    </div>
+    <!-- #endregion -->
+</section>

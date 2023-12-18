@@ -1,0 +1,137 @@
+@import '../../../../../styles.scss';
+
+section {
+    margin: 2rem 0;
+    padding: 2rem 5rem;
+    background: #191919;
+    // border: 1px solid pink;
+    color: $text-title;
+
+    .section-title {
+        h2 {
+            color: var(--text-text-600-p, #F4F3F6);
+            text-align: center;
+
+            /* Eng/H2 */
+            // font-family: Sofia Pro;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 48px;
+            /* 120% */
+        }
+    }
+
+    .body-wrapper {
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 20%;
+
+        .word-wrapper {
+            flex-basis: 60;
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            position: relative;
+
+
+            .quote {
+                width: 220px;
+                height: 201.884px;
+                position: absolute;
+                z-index: 0;
+
+                &.left {
+                    top: -45%;
+                    left: -11%;
+                }
+
+
+                &.right {
+                    bottom: -15%;
+                    right: -22%;
+                }
+            }
+
+
+
+            .paragraph {
+                color: $text-title;
+            }
+
+            .first-paragraph {
+                position: relative;
+
+                font-family: Sofia Pro;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+
+                .ball-one {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background: $primary600;
+                    position: absolute;
+                    bottom: -15%;
+                    left: 30%;
+                }
+            }
+
+            .second-paragraph {
+                position: relative;
+                font-family: Sofia Pro;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+
+                .ball-two {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background: $secondary600;
+                    position: absolute;
+                    bottom: -20%;
+                    right: 10%;
+                }
+            }
+        }
+
+        .avatar-wrapper {
+            flex-basis: 20%;
+            height: fit-content;
+            flex-shrink: 0;
+            position: relative;
+
+            img {
+                // border: 1px solid pink;
+                width: 400px;
+                position: relative;
+            }
+
+            .ball-three {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: $primary600;
+                position: absolute;
+                top: -0%;
+                left: 0%;
+            }
+
+            .ball-four {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: $secondary600;
+                position: absolute;
+                bottom: 10%;
+                right: 0%;
+            }
+        }
+    }
+}

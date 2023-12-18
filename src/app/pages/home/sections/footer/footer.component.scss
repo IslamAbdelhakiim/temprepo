@@ -1,0 +1,122 @@
+@import '../../../../../styles.scss';
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // height: 60vh;
+    // border: 1px solid pink;
+    position: relative;
+    overflow: hidden;
+    padding-top: 60px;
+    background: var(--Neutral-Neutral-700, #191919);
+
+    .gradient-one {
+        position: absolute;
+        width: 30%;
+        height: 40%;
+        top: 0%;
+        left: 0%;
+        // transform: translate(-50%, -50%);
+        background: rgba(152, 33, 207, 0.5);
+        filter: blur(140px);
+    }
+
+    .top-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        width: 100%;
+        height: 100%;
+        padding: 30px 144px;
+
+        .left-section {
+            flex-basis: 50%;
+
+            p {
+                color: var(--Text-Text-500, #818E94);
+                font-family: Sofia Pro;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                margin: 20px 0;
+            }
+        }
+
+        .right-section {
+            flex-basis: 50%;
+            // border: 1px solid pink;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 2rem;
+            ;
+
+            .links-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // align-items: start;
+                margin-right: 3.5rem;
+
+                span {
+                    color: gray;
+                    height: 30px;
+                    // padding: 0.8rem;
+                }
+
+                ul {
+                    padding: 0;
+                    color: $text-title;
+                }
+
+                li {
+                    list-style: none;
+                    padding: 0.6rem 0.6rem 0.6rem 0;
+
+                    a {
+                        text-decoration: none;
+                        color: $text-title;
+                        transition: 0.2s ease-in-out;
+
+                        &:hover {
+                            color: $primary600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--Neutral-Neutral-600, #1E1E1F);
+        color: 1px solid pink;
+        // border: 1px solid pink;
+        padding: 3rem 144px;
+        width: 100%;
+
+        p {
+            color: #909092;
+            font-family: Sofia Pro;
+            font-size: 16px;
+            font-style: normal;
+            flex-basis: 50%;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .social-icons-wrapper {
+            // border: 1px solid pink;
+            flex-basis: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 20px;
+        }
+    }
+
+}

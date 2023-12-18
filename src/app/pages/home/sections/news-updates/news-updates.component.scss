@@ -1,0 +1,78 @@
+@import '../../../../../styles.scss';
+ 
+.news-section {
+    background: var(--Neutral-Neutral-800, #121212);
+    margin-top: 4rem;
+
+    p {
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .news-section-container {
+        width: 90%;
+        margin-inline: auto;
+
+        .news-section-title {
+            color: $text-title;
+        }
+
+        .news-img-content {
+            bottom: 0;
+            left: 0;
+            padding-inline-start: 1.5rem;
+            background: rgba(255, 255, 255, 0.01);
+            backdrop-filter: blur(16px);
+
+            .news-img-content-txt {
+                color: $text-title;
+                margin-bottom: .75rem;
+            }
+
+            .news-img-content-icons {
+                color: $text-lightgrey;
+            }
+
+            .news-img-content-icons-date-txt {
+                margin-inline-start: .5rem;
+            }
+
+            .news-img-content-icons-views {
+                margin-inline-start: 1.5rem;
+
+                &-txt {
+                    margin-inline-start: .5rem;
+                }
+            }
+        }
+
+        .news-left-side {
+            .news-img-content {
+                padding-block: 1.5rem;
+            }
+        }
+
+        .news-right-side {
+            .news-img-content {
+                padding-block: 1rem;
+            }
+        }
+
+        .see-all-news {
+            margin-inline-start: auto;
+            margin-inline-end: 2.5rem;
+            color: $text-title;
+            gap: .5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 4rem;
+
+            a {
+                color: $text-title;
+                cursor: pointer;
+            }
+        }
+    }
+}
